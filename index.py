@@ -1,6 +1,8 @@
 from random import randint
 from time import sleep
-print ('\n--- JO KEN PO ---\n')
+
+#add visualização do jogo
+print ('\nVAMOS JOGAR JOKENPO\n')
 acoes_do_jogo = ('','Pedra', 'Papel', 'Tesoura')
 bot = randint (1,3)
 print (' [1] Pedra\n [2] Papel\n [3] Tesoura\n')
@@ -29,5 +31,5 @@ elif bot ==3 and jogador ==2:
     print ('VOCÊ PERDEU!')
 elif bot == jogador:
     print ('EMPATOU!')
-else:
+else :
     print ('JOGADA INVÁLIDA!')
