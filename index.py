@@ -23,3 +23,5 @@ elif bot ==3 and jogador ==2:
     print ('VOCÊ PERDEU!')
 elif bot == jogador:
     print ('EMPATOU!')
+else jogador >3:
+    print ('JOGADA INVÁLIDA!')
