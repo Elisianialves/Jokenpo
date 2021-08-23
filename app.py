@@ -24,7 +24,7 @@ while jogador not in (1,2,3,4):
      jogador = int (input('JOGADA INVÁLIDA!. Escolha uma das alternativas ou pressione 4 para sair '))
 else:
     if jogador ==4:
-        input ('\nObrigado por participar do Jogo.')
+        input ('\nObrigado por participar do Jogo. Até mais.')
 
 def animacao():
     print ('\nJO')
