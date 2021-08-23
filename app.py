@@ -21,31 +21,35 @@ print ('OU APERTE 4 PARA SAIR.\n ')
 sleep (1)
 jogador = int(input('Qual é sua jogada? '))
 while jogador not in (1,2,3,4):
-     jogador = int (input('JOGADA INVÁLIDA!. Escolha novamente ou pressione 4 para sair '))
+     jogador = int (input('JOGADA INVÁLIDA!. Escolha uma das alternativas ou pressione 4 para sair '))
 else:
     if jogador ==4:
-        input ('\nObrigado por participar do Jogo.')  
-print ('\nJO')
-sleep (1)
-print ('KEN')
-sleep (1)
-print ('PO!!!')
-sleep (1)
-print ('\nRobô jogou {}'.format(acoes_do_jogo[bot]))
-print ('Você jogou {}\n'.format(acoes_do_jogo[jogador]))
+        input ('\nObrigado por participar do Jogo.')
 
-# regras do jogo
-if bot ==1 and jogador == 2:
-    print ('PARABÉNS VOCÊ GANHOU!')
-elif bot ==2 and jogador ==1:
-    print ('QUE PENA VOCÊ PERDEU. ROBÔ ESTÁ COM SORTE.')
-elif bot ==3 and jogador ==1:
-    print ('PARABÉNS VOCÊ GANHOU!')
-elif bot ==1 and jogador == 3:
-    print ('QUE PENA VOCÊ PERDEU. ROBÔ ESTÁ COM SORTE.')
-elif bot ==2 and jogador ==3:
-    print ('PARABÉNS VOCÊ GANHOU!')
-elif bot ==3 and jogador ==2:
-    print ('QUE PENA VOCÊ PERDEU. ROBÔ ESTÁ COM SORTE.')
-elif bot == jogador:
-    print ('EMPATOU!')
+def animacao():
+    print ('\nJO')
+    sleep (1)
+    print ('KEN')
+    sleep (1)
+    print ('PO!!!')
+    sleep (1)
+    print ('\nRobô jogou {}'.format(acoes_do_jogo[bot]))
+    print ('Você jogou {}\n'.format(acoes_do_jogo[jogador]))
+animacao()
+
+def regras_do_jogo():
+    if bot ==1 and jogador == 2:
+        print ('PARABÉNS VOCÊ GANHOU!')
+    elif bot ==2 and jogador ==1:
+        print ('QUE PENA VOCÊ PERDEU. O ROBÔ ESTÁ COM SORTE.')
+    elif bot ==3 and jogador ==1:
+        print ('PARABÉNS VOCÊ GANHOU!')
+    elif bot ==1 and jogador == 3:
+        print ('QUE PENA VOCÊ PERDEU. O ROBÔ ESTÁ COM SORTE.')
+    elif bot ==2 and jogador ==3:
+        print ('PARABÉNS VOCÊ GANHOU!')
+    elif bot ==3 and jogador ==2:
+        print ('QUE PENA VOCÊ PERDEU. O ROBÔ ESTÁ COM SORTE.')
+    elif bot == jogador:
+        print ('EMPATOU!')
+regras_do_jogo()
