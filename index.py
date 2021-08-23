@@ -20,7 +20,7 @@ print ('OU APERTE 4 PARA SAIR\n ')
 sleep (1)
 jogador = int(input('Qual é sua jogada? '))
 while jogador not in (1,2,3,4):
-     jogador = int (input('JOGADA INVÁLIDA!. Escolha novamente ou precione 4 para sair '))
+     jogador = int (input('JOGADA INVÁLIDA!. Escolha novamente ou pressione 4 para sair '))
 else:
     if jogador ==4:
         input ('\nObrigado por participar do Jogo.')  
